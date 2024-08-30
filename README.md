@@ -1,2 +1,0 @@
-# SOCFellow
-Soc Fellowship application

@@ -1,0 +1,60 @@
+/* :root section for CSS variables */
+:root {
+    --font-family: 'Arial', sans-serif;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --border-color: #ddd;
+    --highlight-color: red;
+    --transition-duration: 0.3s;
+    --padding: 10px;
+    --margin-top: 10px;
+    --border-radius: 4px;
+    --font-size-h1: 30px;
+    --font-size-p: 16px;
+}
+
+/* General body styling */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    padding: 40px;
+    color: var(--text-color);
+}
+
+/* Styling for h1 elements */
+h1 {
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: var(--padding);
+    font-size: var(--font-size-h1); /* Use variable for font size */
+}
+
+/* Styling for ul elements */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for .list-item class */
+.list-item {
+    padding: var(--padding);
+    border: 1px solid var(--border-color);
+    margin-top: var(--margin-top);
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-duration);
+}
+
+/* Hover effect for .list-item class */
+.list-item:hover {
+    background-color: #e9e9e9;
+}
+
+/* Styling for .highlight class */
+.highlight {
+    color: var(--highlight-color); /* Use variable for highlight color */
+}
+
+/* Additional styling for paragraphs */
+p {
+    font-size: var(--font-size-p); /* Use variable for paragraph font size */
+}
